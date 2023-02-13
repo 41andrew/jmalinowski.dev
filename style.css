@@ -1,3 +1,42 @@
 body {
-    background-color: 393E46;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.heading {
+    color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    animation: 2.5s fadeIn, 2s cubic-bezier(.23, .63, .05, .99) arrive, 2s ease-in-out moveToLeftCorner 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes arrive {
+    0% {
+        transform: translateX(100vh);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveToLeftCorner {
+    100% {
+        transform: translate(-30vw, -30vh);
+    }
 }
