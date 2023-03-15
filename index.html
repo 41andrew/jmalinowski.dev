@@ -9,23 +9,44 @@
     <link rel="icon" href="./resources/bachi_no_bg.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <title>jmalinowski.dev</title>
 </head>
 
 <body>
-    <div class="one animatable">
-        <div class="heading">Hi, I'm</div>
+    <div class="one animatable" id="home">
+        <div class="heading">
+            <div class="heading_name heading-animation">Hi, I'm Jędrzej</div>
+        </div>
     </div>
-    <div class="two">
+
+
+    <nav class="navigation-bar">
+        <ul class="navigation">
+            <li class="navigation-item"><a href="#home">Home</a></li>
+            <li class="navigation-item"><a href="#about">About</a></li>
+            <li class="navigation-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="two" id="about">
         <div class="square-wrapper animatable">
             <div class="square"></div>
         </div>
-        
-    </div>
-    <div class="three"></div>
 
-<script src="script.js"></script>
+    </div>
+
+
+    <div class="three" id="contact"></div>
+
+    <footer class="footer">
+        <div class="github">
+            <img src="resources/github.svg" alt>
+        </div>
+    </footer>
+
+    <script src=" script.js"></script>
 </body>
 
 </html>

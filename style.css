@@ -1,6 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     margin: 0;
+    color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+li {
+    list-style: none;
 }
 
 .one {
@@ -23,16 +39,67 @@ body {
     margin-top: 0;
 }
 
+.three {
+    display: flex;
+    background-color: #1a1a2a;
+    ;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
 .heading {
-    color: #fafafa;
-    font-family: 'Roboto', sans-serif;
     font-size: 3em;
     margin-top: -20%;
 }
 
 .heading-animation {
-    animation: 2.5s fadeIn, 2s cubic-bezier(.23, .63, .05, .99) arrive, 2s ease-in-out moveToLeftCorner 2s;
+    animation: 2.5s fadeIn, 2s cubic-bezier(.23, .63, .05, .99) arrive;
     animation-fill-mode: forwards;
+}
+
+.navigation-bar {
+    display: flex;
+    position: sticky;
+    height: 4rem;
+    width: 100vw;
+    top: 0;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #1a1a1a;
+    background-color: rgba(40, 40, 40);
+    /* backdrop-filter: blur(8px); */
+    box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
+    /* z-index: 99999999999; */
+}
+
+.navigation {
+    display: flex;
+    margin-right: 10rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.navigation-item {
+    margin-right: 3rem;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    background-color: #282828;
+    width: 100vw;
+}
+
+.github {
+    height: 35px;
+    width: 35px;
 }
 
 @keyframes fadeIn {
@@ -66,10 +133,11 @@ body {
 }
 
 @keyframes wipe-enter {
-	0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
+    0% {
+        transform: scale(0, .025);
+    }
+
+    50% {
+        transform: scale(1, .025);
+    }
 }
